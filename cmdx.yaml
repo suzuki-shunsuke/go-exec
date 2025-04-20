@@ -1,4 +1,5 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/suzuki-shunsuke/cmdx/v2.0.1/json-schema/cmdx.json
 # the configuration file of cmdx - task runner
 # https://github.com/suzuki-shunsuke/cmdx
 tasks:
@@ -17,19 +18,3 @@ tasks:
     description: lint the go code
     usage: lint the go code
     script: golangci-lint run
-  - name: coverage
-    short: c
-    description: coverage test
-    usage: coverage test
-    script: "bash scripts/coverage.sh {{.target}}"
-    args:
-      - name: target
-  - name: install
-    short: i
-    description: Build and install deny-self-approve
-    usage: Build and install deny-self-approve by "go install" command
-    script: go install ./cmd/deny-self-approve
-  - name: fmt
-    description: Format GO codes
-    usage: Format GO codes
-    script: bash scripts/fmt.sh

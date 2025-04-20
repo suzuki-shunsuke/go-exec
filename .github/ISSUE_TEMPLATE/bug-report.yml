@@ -1,6 +1,6 @@
 name: Bug Report
 description: |
-  Please report a bug of deny-self-approve.
+  Please report a bug.
   If you're not sure if it's a bug or not, please use the template `Support Request` instead.
 labels:
   - bug
@@ -12,12 +12,6 @@ body:
       description: |
         Please use the latest version.
         If you checked multiple versions, please write the result too.
-        e.g. This issue occurs using deny-self-approve v0.2.1 and v0.2.2, but doesn't occur using v0.2.0.
-      value: |
-        ```console
-        $ deny-self-approve -v
-
-        ```
     validations:
       required: true
   - type: textarea
@@ -34,12 +28,6 @@ body:
         Please see [the guide](https://github.com/suzuki-shunsuke/oss-contribution-guide#write-good-how-to-reproduce) too.
         If possible, please reproduce the issue in a public repository.
         And please explain the review status.
-      value: |
-        Executed command and output:
-
-        ```console
-        $ 
-        ```
     validations:
       required: true
   - type: textarea

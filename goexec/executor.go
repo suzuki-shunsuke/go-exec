@@ -41,5 +41,5 @@ func (e *Runner) Run(cmd *exec.Cmd, result *Result) error {
 	}
 	err := cmd.Run()
 	result.ExitCode = cmd.ProcessState.ExitCode()
-	return err
+	return err //nolint:wrapcheck
 }

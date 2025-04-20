@@ -10,7 +10,7 @@ import (
 // Pipe returns the last command executed, the index of the command that failed, and an error if any occurred.
 func Pipe(cmds ...*exec.Cmd) (*exec.Cmd, int, error) {
 	s := len(cmds)
-	if s < 2 {
+	if s < 2 { //nolint:mnd
 		return nil, 0, errors.New("at least two commands are required")
 	}
 	entries := make([]*entry, s)
@@ -30,7 +30,7 @@ func Pipe(cmds ...*exec.Cmd) (*exec.Cmd, int, error) {
 
 	for i, cmd := range cmds {
 		if err := cmd.Start(); err != nil {
-			return cmd, i, err
+			return cmd, i, err //nolint:wrapcheck
 		}
 	}
 	for i, entry := range entries {
@@ -57,7 +57,7 @@ func (e *entry) Wait() error {
 		}
 	}()
 	if err := e.cmd.Wait(); err != nil {
-		return err
+		return err //nolint:wrapcheck
 	}
 	return nil
 }

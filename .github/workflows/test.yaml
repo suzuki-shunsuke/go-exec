@@ -20,6 +20,6 @@ jobs:
     permissions:
       id-token: write
       contents: read
-      pull-requests: read
+      pull-requests: write
     secrets:
       TAKUMI_GUARD_BOT_ID: ${{secrets.TAKUMI_GUARD_BOT_ID}}

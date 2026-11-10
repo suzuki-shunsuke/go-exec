@@ -9,7 +9,7 @@ jobs:
       id-token: write
     timeout-minutes: 15
     steps:
-      - uses: suzuki-shunsuke/go-autofix-action@v0.2.2
+      - uses: suzuki-shunsuke/go-autofix-action@v0.2.3
         with:
           aqua_version: v2.66.1
           takumi_guard_bot_id: ${{secrets.TAKUMI_GUARD_BOT_ID}}

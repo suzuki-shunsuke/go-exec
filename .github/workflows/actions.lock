@@ -7,7 +7,7 @@ workflows:
         - 'actions/checkout@v7.0.1'
         - 'suzuki-shunsuke/actionlint-action@v0.2.2'
     '.github/workflows/autofix.yaml':
-        - 'suzuki-shunsuke/go-autofix-action@v0.2.2'
+        - 'suzuki-shunsuke/go-autofix-action@v0.2.3'
     '.github/workflows/test.yaml': []
     '.github/workflows/watch-star.yaml':
         - 'suzuki-shunsuke/watch-star-action@v0.1.1'
@@ -43,9 +43,9 @@ dependencies:
         commit: 'sha1-83c4a4a3b228afcf6dbf79d793c742de182de31e'
         owner_id: 13323303
         repo_id: 944510424
-    'suzuki-shunsuke/go-autofix-action@v0.2.2':
-        ref: 'v0.2.2'
-        commit: 'sha1-ad61a60b1ab7061f3adca50247830727f0aa4df2'
+    'suzuki-shunsuke/go-autofix-action@v0.2.3':
+        ref: 'v0.2.3'
+        commit: 'sha1-af0e6434d892c2d37e78604a9ebd9c18e87e8cdc'
         owner_id: 13323303
         repo_id: 924589406
         uses:
